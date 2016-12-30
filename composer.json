@@ -1,0 +1,26 @@
+{
+  "name": "laravel/laravel",
+  "require": {
+    "filp/whoops": "*",
+    "noahbuscher/macaw": "dev-master",
+    "joshcam/mysqli-database-class": "dev-master",
+    "twig/twig":"~1.0"
+  },
+  "autoload": {
+        "psr-4": {
+          "Neat\\": "Neat",
+          "export\\":"export",
+          "app\\":"app",
+          "admin\\":"admin"
+        },
+    "files": [
+      "export/functions/function.php"
+    ]
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}

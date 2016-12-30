@@ -1,0 +1,36 @@
+{#<php>#}
+    {#if(!is_pjax()){#}
+{#</php>#}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    {%  include  'base/head.twig' %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body class="">
+{% block body %}
+
+{% endblock %}
+
+</body>
+</html>
+{#<include file="Public/header" />#}
+{#<div id="load_screen">#}
+    {#<include file="Public/menu" />#}
+    {#<include file="Public/content" />#}
+{#</div>#}
+{#<include file="Public/footer" />#}
+{#<include file="Public/script" />#}
+{#</body>#}
+{#</html>#}
+{#<php>#}
+    {#}else{#}
+{#</php>#}
+{#<title>{$meta_title}|{:C('WEB_SITE_TITLE')}</title>#}
+{#<include file="Public/menu" />#}
+{#<include file="Public/content" />#}
+{#<block name="script"></block>#}
+{#<block name="hidden"></block>#}
+{#<php>#}
+    {#}#}
+{#</php>#}
