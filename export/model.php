@@ -53,6 +53,9 @@ class model
         $this->field=$field;
         return $this;
     }
+    public function delete(){
+        return $this->db->delete($this->table);
+    }
     public function page($page,$pageLimit='10'){
         $this->db->pageLimit=$pageLimit;
         $info= $this->db->paginate($this->table,$page);
